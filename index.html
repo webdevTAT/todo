@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="list">
+            <!-- list -->
+            <section class="newItem">
+                <ul id="itemContainer">
+                    <li><input type="checkbox" class="cbx" onclick="deleteTheLine()"><span class="one">WORKING</span></li>
+                </ul>
+            </section>
+            <section class="editor">
+                <input type="text" name="text" id="text" placeholder="Enter">
+            </section>
+        </section>
+        <section class="buttons">
+            <section class="😒">
+                <div class="add" onclick="addClicked()">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="remove">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="undo">
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

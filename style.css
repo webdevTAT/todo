@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main {
+  background-color: rgb(243, 243, 243);
+  height: 50%;
+  width: 600px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.list {
+  height: 80%;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.😒 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+}
+.add {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.undo {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons span {
+  height: 20px;
+  width: 1px;
+  /* border-radius: ; */
+  background-color: antiquewhite;
+}
+.add > span:first-child {
+  transform: rotate(90deg);
+}
+.remove > span:first-child {
+  transform: rotate(45deg);
+}
+
+.remove > span:last-child {
+  transform: rotate(-45deg);
+}
+.undo > span:first-child {
+  transform: rotate(45deg) translateX(5px);
+  height: 10px;
+}
+
+.undo > span:last-child {
+  transform: rotate(-45deg) translateX(5px);
+  height: 10px;
+}
+.add,
+.remove,
+.undo {
+  transition: all ease 0.3s;
+}
+.add:hover,
+.remove:hover,
+.undo:hover {
+  background-color: rgb(146, 146, 146);
+  color: white;
+}
+.add:active,
+.remove:active,
+.undo:active {
+  background-color: rgb(27, 27, 27);
+}
+.newItem {
+  height: 80%;
+}
+#text {
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: aliceblue;
+  height: 70px;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: background-color ease .2s;
+}
+li {
+  list-style: none;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: .3rem;
+  /* text-decoration: line-through; */
+
+}
+input {
+  margin-right: 0.5rem;
+}
+
+#itemContainer{
+    /* background-color: antiquewhite; */
+    height: 230px;
+    border-radius: 1rem;
+    overflow-x: hidden;
+}
+#itemContainer::-webkit-scrollbar{
+    display: none;
+}
