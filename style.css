@@ -11,7 +11,7 @@ body {
 }
 main {
   background-color: rgb(243, 243, 243);
-  height: 50%;
+  height: 500px;
   width: 600px;
   border-radius: 1.5rem;
   display: flex;
