@@ -16,7 +16,7 @@ main {
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
-  margin:1rem;
+  margin: 1rem;
   /* align-items: center; */
 }
 
@@ -128,8 +128,12 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: .3rem;
+  transition: background-color ease .5s;
   /* text-decoration: line-through; */
 
+}
+li:hover{
+  background-color: rgb(97, 205, 255);
 }
 input {
   margin-right: 0.5rem;
